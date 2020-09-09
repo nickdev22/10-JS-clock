@@ -13,5 +13,9 @@ setInterval(() => {
   m = m < 10 ? "0" + m : m;
   s = s < 10 ? "0" + s : s;
 
-  clock.innerHTML = h + ":" + m + ":" + s;
+  //   clock.innerHTML = h + ":" + m + ":" + s;
+
+  color = "#" + h + m + s;
+  document.body.style.background = color;
+  document.querySelector("#clock").innerHTML = color;
 });
